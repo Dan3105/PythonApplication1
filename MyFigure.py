@@ -1,5 +1,5 @@
 ﻿
-import DataSp as ds
+import DataScript.DataSp as ds
 
 
 ## Các ví dụ nằm ở file này

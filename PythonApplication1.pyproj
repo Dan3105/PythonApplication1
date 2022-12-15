@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8d32f9f1-1a44-4919-9e37-327b89f6b933</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>MyFigure.py</StartupFile>
+    <StartupFile>UIScript\MainFrame.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,11 +21,18 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DataSp.py" />
+    <Compile Include="DataScript\DataSp.py" />
+    <Compile Include="DataScript\StaticData.py" />
     <Compile Include="GUI.py" />
     <Compile Include="MyFigure.py" />
-    <Compile Include="AlgorithmLib.py" />
-    <Compile Include="Paragraph.py" />
+    <Compile Include="DataScript\AlgorithmLib.py" />
+    <Compile Include="UIScript\MainFrame.py" />
+    <Compile Include="UIScript\TextEditor.py" />
+    <Compile Include="UIScript\Utilities.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataScript\" />
+    <Folder Include="UIScript\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

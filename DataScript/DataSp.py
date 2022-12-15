@@ -1,6 +1,5 @@
-﻿import AlgorithmLib as al
-
-
+﻿#import AlgorithmLib as al
+import DataScript.AlgorithmLib as al
 #region Main Data
 class Document:
 
@@ -19,7 +18,6 @@ class Document:
 
     def GetListProcess(self) -> list:
         return self.__listProcessor.copy()
-
 
 class DocumentDatas:
     __listDocument = [] #list<Document>
@@ -58,5 +56,5 @@ class DocumentDatas:
     def __GenerateDicTerm(self) -> dict:
         return al.GenerateDicTerm(self.__listDocument)
 #endregion
-#endregion
+
 
